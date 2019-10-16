@@ -1,10 +1,9 @@
 'use strict';
 
-// The tests are pre-configured to run only the constructor variety, but will need to be altered to also test your Classes
+const VehicleConstructor = require('../vehicle-constructor.js');
+const VehicleClass = require('../vehicle-class.js');
 
-const VehicleClass = require('../vehicle-class.js/index.js');
-
-let types = ['Constructor'];
+let types = ['Constructor', 'Class'];
 
 describe('Vehicles', () => {
 
@@ -12,10 +11,12 @@ describe('Vehicles', () => {
     
     function getCar(type) {
       switch(type) {
-        case 'Constructor':
-          return new VehicleConstructor.Car('foo');
-        default:
-          return {};
+      case 'Constructor':
+        return new VehicleConstructor.Car('foo', 4);
+      case 'Class':
+        return new VehicleClass.Car('foo', 4);
+      default:
+        return {};
       }
     }
     
@@ -46,10 +47,12 @@ describe('Vehicles', () => {
 
     function getMotorcycle(type) {
       switch(type) {
-        case 'Constructor':
-          return new VehicleConstructor.Motorcycle('foo');
-        default:
-          return {};
+      case 'Constructor':
+        return new VehicleConstructor.Motorcycle('foo', 2);
+      case 'Class':
+        return new VehicleClass.Motorcycle('foo', 2);
+      default:
+        return {};
       }
     }
 

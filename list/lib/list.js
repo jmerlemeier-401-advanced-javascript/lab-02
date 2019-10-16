@@ -1,11 +1,21 @@
 'use strict';
 
+/**
+ * Class List - Creates a List
+ * @params
+ * @returns
+ */
 class List {
   constructor() {
     this.length = 0;
     this.data = {};
   }
-
+  
+  /**
+ * Class List - Creates a List
+ * @params
+ * @returns
+ */
   reindex() {
     let data = Object.keys(this.data).sort().reduce((acc,val,idx) => {
       acc[idx] = this.data[val];
