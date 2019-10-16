@@ -33,3 +33,5 @@ Test each method for proper/improper use (required params)
 Validate that validation is reliable
 Validate proper error conditions/returns
 * Time:
+
+Array Method JSDOC help provided by MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/prototype

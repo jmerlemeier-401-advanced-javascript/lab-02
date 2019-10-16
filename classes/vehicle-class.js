@@ -1,11 +1,5 @@
 'use strict';
 
-/**
- * Class Vehicle - Creates a vehicle
- * @params
- * @returns
- */
-
 class Vehicle {
   constructor(name, wheels){
     this.name = name;
